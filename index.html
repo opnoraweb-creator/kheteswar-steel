@@ -1,0 +1,33 @@
+$root = "$HOME\Desktop\Khetswar-Steel-Aluminum"
+
+$folders = @(
+    "assets\icons",
+    "assets\profile",
+    "assets\products\steel-railing",
+    "assets\products\aluminium-work",
+    "assets\products\glass-railing",
+    "assets\products\balcony",
+    "assets\products\windows",
+    "assets\products\hotel-furniture",
+    "assets\products\steel-letters",
+    "assets\products\other"
+)
+
+New-Item -ItemType Directory -Path $root -Force | Out-Null
+
+foreach ($folder in $folders) {
+    New-Item -ItemType Directory -Path (Join-Path $root $folder) -Force | Out-Null
+}
+
+$files = @(
+    "index.html",
+    "style.css",
+    "script.js",
+    "products.json"
+)
+
+foreach ($file in $files) {
+    New-Item -ItemType File -Path (Join-Path $root $file) -Force | Out-Null
+}
+
+Write-Host "Khetswar Steel & Aluminum website folders created successfully!" -ForegroundColor Green
