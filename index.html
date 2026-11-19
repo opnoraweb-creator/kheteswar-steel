@@ -1,33 +1,330 @@
-$root = "$HOME\Desktop\Khetswar-Steel-Aluminum"
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-$folders = @(
-    "assets\icons",
-    "assets\profile",
-    "assets\products\steel-railing",
-    "assets\products\aluminium-work",
-    "assets\products\glass-railing",
-    "assets\products\balcony",
-    "assets\products\windows",
-    "assets\products\hotel-furniture",
-    "assets\products\steel-letters",
-    "assets\products\other"
-)
+  <title>Khetswar Steel & Aluminum | Pali Rajasthan</title>
+  <meta name="description" content="Khetswar Steel & Aluminum, Pali Rajasthan. Steel railing, aluminium work, glass railing, balcony, windows and custom fabrication. 10 years of experience.">
+  <meta name="keywords" content="Khetswar Steel Aluminum Pali, Steel Railing Pali, Aluminium Work Pali, Glass Railing, Balcony Railing, Aluminium Windows, Steel Furniture">
+  <meta name="author" content="Khetswar Steel & Aluminum">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#101820">
 
-New-Item -ItemType Directory -Path $root -Force | Out-Null
+  <link rel="canonical" href="https://khetswar-steel-aluminum.digiprofiles.in/">
+  <link rel="icon" type="image/png" href="./assets/icons/favicon.png">
 
-foreach ($folder in $folders) {
-    New-Item -ItemType Directory -Path (Join-Path $root $folder) -Force | Out-Null
-}
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-$files = @(
-    "index.html",
-    "style.css",
-    "script.js",
-    "products.json"
-)
+  <meta property="og:title" content="Khetswar Steel & Aluminum | Pali">
+  <meta property="og:description" content="10 years of experience in Steel and Aluminium work.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://khetswar-steel-aluminum.digiprofiles.in/">
+</head>
 
-foreach ($file in $files) {
-    New-Item -ItemType File -Path (Join-Path $root $file) -Force | Out-Null
-}
+<body>
 
-Write-Host "Khetswar Steel & Aluminum website folders created successfully!" -ForegroundColor Green
+<header class="header">
+  <div class="container nav">
+
+    <a href="#home" class="brand">
+      <img src="./assets/profile/logo.png" alt="Khetswar Steel & Aluminum Logo">
+      <div>
+        <h1>Khetswar</h1>
+        <span>STEEL & ALUMINUM</span>
+      </div>
+    </a>
+
+    <div class="nav-actions">
+      <a class="call-btn" href="tel:+918849616597">
+        <i class="fa-solid fa-phone"></i> Call
+      </a>
+
+      <a class="whatsapp-btn" href="https://wa.me/919099787621" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+
+      <div class="hero-content">
+        <span class="eyebrow">QUALITY • DESIGN • TRUST</span>
+
+        <h2>
+          मजबूत काम,<br>
+          <span>शानदार डिजाइन!</span>
+        </h2>
+
+        <p>
+          Steel और Aluminium के सभी प्रकार के काम के लिए
+          Khetswar Steel & Aluminum, Pali में आपका स्वागत है।
+        </p>
+
+        <div class="experience">
+          <strong>10+</strong>
+          <span>सालों का अनुभव</span>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#gallery" class="btn btn-primary">
+            हमारा काम देखें
+          </a>
+
+          <a href="https://wa.me/919099787621" class="btn btn-outline" target="_blank" rel="noopener">
+            WhatsApp Enquiry
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img src="./assets/profile/shop.jpg" alt="Khetswar Steel and Aluminum Work">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+
+      <div class="section-title">
+        <span>ABOUT US</span>
+        <h2>हमारे बारे में</h2>
+      </div>
+
+      <div class="about-box">
+
+        <div class="about-mark">
+          <i class="fa-solid fa-award"></i>
+          <strong>10+</strong>
+          <span>Years Experience</span>
+        </div>
+
+        <div>
+          <h3>Khetswar Steel & Aluminum</h3>
+
+          <p>
+            Khetswar Steel & Aluminum में हम पिछले 10 सालों से
+            Steel और Aluminium से जुड़े कार्यों का अनुभव रखते हैं।
+            हमारा उद्देश्य हर ग्राहक को मजबूत, टिकाऊ और आकर्षक
+            डिजाइन का काम उपलब्ध कराना है।
+          </p>
+
+          <p>
+            Steel Railing, Balcony, Aluminium Windows, Glass Railing,
+            Hotel Furniture और अन्य Fabrication कार्यों के लिए
+            हमसे संपर्क करें।
+          </p>
+
+          <strong class="owner-name">Anil Rajpurohit</strong>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services-section" id="services">
+    <div class="container">
+
+      <div class="section-title">
+        <span>OUR SERVICES</span>
+        <h2>हमारी सेवाएँ</h2>
+        <p>Steel और Aluminium के विभिन्न प्रकार के कार्य</p>
+      </div>
+
+      <div class="service-grid">
+
+        <article class="service-card">
+          <i class="fa-solid fa-stairs"></i>
+          <h3>Steel Railing</h3>
+          <p>सीढ़ियों और घरों के लिए स्टील रेलिंग।</p>
+        </article>
+
+        <article class="service-card">
+          <i class="fa-solid fa-house"></i>
+          <h3>Balcony Work</h3>
+          <p>बालकनी के लिए मजबूत और सुंदर डिजाइन।</p>
+        </article>
+
+        <article class="service-card">
+          <i class="fa-solid fa-window-maximize"></i>
+          <h3>Aluminium Windows</h3>
+          <p>अलग-अलग डिजाइन की Aluminium खिड़कियाँ।</p>
+        </article>
+
+        <article class="service-card">
+          <i class="fa-solid fa-border-all"></i>
+          <h3>Glass Railing</h3>
+          <p>ग्लास और स्टील की आकर्षक रेलिंग।</p>
+        </article>
+
+        <article class="service-card">
+          <i class="fa-solid fa-chair"></i>
+          <h3>Hotel Furniture</h3>
+          <p>होटल टेबल, कुर्सी और अन्य फर्नीचर।</p>
+        </article>
+
+        <article class="service-card">
+          <i class="fa-solid fa-font"></i>
+          <h3>Steel Letters</h3>
+          <p>स्टील के अक्षर और नाम प्लेट।</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+
+      <div class="section-title">
+        <span>OUR WORK GALLERY</span>
+        <h2>हमारे काम की झलक</h2>
+        <p>फोटो पर क्लिक करके बड़ा देखें</p>
+      </div>
+
+      <div class="gallery-filter" id="gallery-filter">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="steel-railing">Steel Railing</button>
+        <button class="filter-btn" data-category="aluminium-work">Aluminium</button>
+        <button class="filter-btn" data-category="glass-railing">Glass Railing</button>
+        <button class="filter-btn" data-category="balcony">Balcony</button>
+        <button class="filter-btn" data-category="windows">Windows</button>
+        <button class="filter-btn" data-category="hotel-furniture">Furniture</button>
+        <button class="filter-btn" data-category="steel-letters">Steel Letters</button>
+        <button class="filter-btn" data-category="other">Other</button>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <p class="loading">काम की फोटो लोड हो रही हैं...</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <span>CONTACT US</span>
+        <h2>हमसे संपर्क करें</h2>
+      </div>
+
+      <div class="contact-box">
+
+        <div class="contact-detail">
+          <i class="fa-solid fa-user"></i>
+          <div>
+            <small>Owner</small>
+            <strong>Anil Rajpurohit</strong>
+          </div>
+        </div>
+
+        <a class="contact-detail" href="https://wa.me/919099787621" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div>
+            <small>WhatsApp</small>
+            <strong>90997 87621</strong>
+          </div>
+        </a>
+
+        <a class="contact-detail" href="tel:+918849616597">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <small>Call Us</small>
+            <strong>88496 16597</strong>
+          </div>
+        </a>
+
+        <a class="contact-detail" href="https://www.instagram.com/_kheteshvar_steel.pali22" target="_blank" rel="noopener">
+          <i class="fa-brands fa-instagram"></i>
+          <div>
+            <small>Follow Us</small>
+            <strong>Instagram</strong>
+          </div>
+        </a>
+
+        <a class="contact-detail" href="https://maps.app.goo.gl/QVudoVeKdNeqJGP7A" target="_blank" rel="noopener">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <small>Our Location</small>
+            <strong>सुमेरपुर रोड, पाली, राजस्थान</strong>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="map-button">
+        <a href="https://maps.app.goo.gl/QVudoVeKdNeqJGP7A" target="_blank" class="btn btn-primary" rel="noopener">
+          <i class="fa-solid fa-map-location-dot"></i>
+          Google Maps पर रास्ता देखें
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <h2>Khetswar Steel & Aluminum</h2>
+    <p>मजबूत काम, शानदार डिजाइन!</p>
+
+    <p>
+      <a href="https://www.instagram.com/_kheteshvar_steel.pali22" target="_blank" rel="noopener">
+        <i class="fa-brands fa-instagram"></i> Instagram
+      </a>
+    </p>
+
+    <p>
+      <a href="https://wa.me/919099787621" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+      &nbsp; | &nbsp;
+      <a href="tel:+918849616597">
+        <i class="fa-solid fa-phone"></i> Call
+      </a>
+    </p>
+
+    <p>© <span id="year"></span> Khetswar Steel & Aluminum. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- IMAGE LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close">
+    &times;
+  </button>
+
+  <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous">
+    &#10094;
+  </button>
+
+  <img id="lightbox-image" src="" alt="Expanded work photo">
+
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+
+  <button class="lightbox-next" id="lightbox-next" aria-label="Next">
+    &#10095;
+  </button>
+
+</div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
