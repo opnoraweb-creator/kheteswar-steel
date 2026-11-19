@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kheteswar-steel-and-aluminum-pali.digiprofiles.in/sitemap.xml
