@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Khetswar Steel & Aluminum | Pali Rajasthan</title>
+  <title>खेतश्वर स्टील एंड एल्यूमिनियम | Khetswar Steel & Aluminum Pali</title>
 
-  <meta name="description" content="Khetswar Steel & Aluminum, Pali Rajasthan. Steel railing, gates, windows, glass work, balcony and hotel furniture. Contact Anil Rajpurohit.">
+  <meta name="description" content="खेतश्वर स्टील एंड एल्यूमिनियम, पाली राजस्थान। स्टील रेलिंग, स्टील गेट, बालकनी, एल्यूमिनियम विंडो, ग्लास रेलिंग और फर्नीचर का काम। संपर्क करें अनिल राजपुरोहित।">
 
+  <meta name="keywords" content="खेतश्वर स्टील पाली, खेतश्वर एल्यूमिनियम, स्टील की रेलिंग पाली, स्टील गेट पाली, एल्यूमिनियम विंडो पाली, ग्लास रेलिंग पाली, Khetswar Steel Pali, Khetswar Steel and Aluminum">
+
+  <meta name="author" content="Anil Rajpurohit">
   <meta name="theme-color" content="#a60000">
 
   <link rel="canonical" href="https://khetswar-steel-aluminum.digiprofiles.in/">
@@ -17,14 +20,19 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <meta property="og:title" content="Khetswar Steel & Aluminum">
-  <meta property="og:description" content="Quality steel and aluminium work in Pali, Rajasthan.">
+  <meta property="og:title" content="खेतश्वर स्टील एंड एल्यूमिनियम | Khetswar Steel & Aluminum">
+  <meta property="og:description" content="स्टील, एल्यूमिनियम और ग्लास का काम। सुमेरपुर रोड, पाली, राजस्थान।">
   <meta property="og:image" content="./assets/profile/logo.png">
+  <meta property="og:locale" content="hi_IN">
+  <meta property="og:type" content="website">
 
-  <!-- Navigation and mobile layout corrections -->
   <style>
+    body {
+      font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+    }
+
     .menu-toggle {
       display: none !important;
     }
@@ -51,6 +59,35 @@
       white-space: nowrap;
     }
 
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      width: 95px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.5;
+    }
+
+    .brand-hindi {
+      font-size: 13px;
+      color: #a60000;
+      font-weight: 700;
+    }
+
+    .brand-english {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
     .hero-buttons {
       display: flex;
       flex-wrap: wrap;
@@ -58,25 +95,37 @@
       gap: 12px;
     }
 
-    .location-button {
+    .location-button,
+    .instagram-button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 7px;
+      gap: 8px;
       min-height: 52px;
-      padding: 12px 17px;
+      padding: 12px 16px;
       border: 1px solid currentColor;
       border-radius: 12px;
       color: inherit;
       text-decoration: none;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 600;
-      line-height: 1.4;
       text-align: center;
+      transition: 0.2s ease;
     }
 
-    .location-button .map-pin {
+    .location-button:hover,
+    .instagram-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .map-pin {
       font-size: 20px;
+    }
+
+    .instagram-button svg {
+      width: 23px;
+      height: 23px;
+      flex-shrink: 0;
     }
 
     .hero-image img {
@@ -86,6 +135,18 @@
 
     .floating-whatsapp {
       display: none !important;
+    }
+
+    .hindi-name {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      font-weight: 700;
+    }
+
+    .about-hindi {
+      color: #a60000;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
     }
 
     @media (max-width: 768px) {
@@ -98,8 +159,16 @@
         max-width: 100%;
       }
 
-      .brand span {
-        font-size: 15px;
+      .brand img {
+        width: 90px;
+      }
+
+      .brand-english {
+        font-size: 13px;
+      }
+
+      .brand-hindi {
+        font-size: 12px;
       }
 
       .nav-menu {
@@ -118,11 +187,13 @@
       }
 
       .hero-buttons .btn,
-      .location-button {
+      .location-button,
+      .instagram-button {
         flex: 1 1 auto;
       }
 
-      .location-button {
+      .location-button,
+      .instagram-button {
         font-size: 13px;
       }
     }
@@ -136,7 +207,8 @@
         font-size: 13px;
       }
 
-      .location-button {
+      .location-button,
+      .instagram-button {
         width: 100%;
       }
     }
@@ -151,8 +223,12 @@
 
       <a href="#home" class="brand">
         <img src="./assets/profile/logo.png"
-             alt="Khetswar Steel & Aluminum Logo">
-        <span>Khetswar Steel & Aluminum</span>
+             alt="खेतश्वर स्टील एंड एल्यूमिनियम लोगो">
+
+        <span class="brand-text">
+          <span class="brand-english">Khetswar Steel & Aluminum</span>
+          <span class="brand-hindi">खेतश्वर स्टील एंड एल्यूमिनियम</span>
+        </span>
       </a>
 
       <nav class="nav-menu" id="nav-menu">
@@ -171,16 +247,29 @@
     <div class="container hero-content">
 
       <div class="hero-text">
+
         <span class="hero-tag">Quality • Design • Trust</span>
 
-        <h1>Khetswar Steel & Aluminum</h1>
+        <h1>
+          Khetswar Steel & Aluminum
+        </h1>
+
+        <h2 class="hindi-name">
+          खेतश्वर स्टील एंड एल्यूमिनियम
+        </h2>
 
         <p>
-          Steel, Aluminium & Glass Work
-          with quality finishing and attractive designs.
+          Steel, Aluminium & Glass Work with quality
+          finishing and attractive designs.
         </p>
 
-        <p class="hero-owner">Owned by Anil Rajpurohit</p>
+        <p class="hindi-name">
+          स्टील, एल्यूमिनियम और ग्लास का बेहतरीन काम।
+        </p>
+
+        <p class="hero-owner">
+          Owned by Anil Rajpurohit
+        </p>
 
         <div class="hero-buttons">
 
@@ -195,11 +284,37 @@
             Call Now
           </a>
 
+          <!-- GOOGLE MAPS -->
           <a class="location-button"
              href="https://maps.app.goo.gl/QVudoVeKdNeqJGP7A"
              target="_blank" rel="noopener">
+
             <span class="map-pin">📍</span>
             <span>Sumerpur Road, Pali</span>
+
+          </a>
+
+          <!-- INSTAGRAM LOGO -->
+          <a class="instagram-button"
+             href="https://www.instagram.com/_kheteshvar_steel.pali22"
+             target="_blank" rel="noopener"
+             aria-label="Visit Khetswar Steel Instagram">
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 aria-hidden="true">
+
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+
+            </svg>
+
+            <span>Instagram</span>
           </a>
 
         </div>
@@ -221,6 +336,9 @@
       <div class="section-heading">
         <span>About Our Business</span>
         <h2>About Khetswar Steel & Aluminum</h2>
+        <p class="about-hindi">
+          खेतश्वर स्टील एंड एल्यूमिनियम
+        </p>
       </div>
 
       <div class="about-content">
@@ -232,7 +350,9 @@
         </div>
 
         <div class="about-text">
+
           <h3>Anil Rajpurohit</h3>
+
           <p class="owner-label">
             Owner – Khetswar Steel & Aluminum
           </p>
@@ -248,10 +368,16 @@
             types of residential and commercial requirements.
           </p>
 
+          <p class="hindi-name">
+            हमें स्टील, एल्यूमिनियम और ग्लास के काम में
+            10 वर्षों का अनुभव है।
+          </p>
+
           <div class="experience">
             <strong>10+</strong>
             <span>Years of Experience</span>
           </div>
+
         </div>
 
       </div>
@@ -265,6 +391,7 @@
       <div class="section-heading">
         <span>What We Do</span>
         <h2>Our Services</h2>
+        <p class="hindi-name">हमारी सेवाएं</p>
       </div>
 
       <div class="services-grid">
@@ -272,37 +399,37 @@
         <article class="service-card">
           <div class="service-icon">▥</div>
           <h3>Steel Railing</h3>
-          <p>Modern steel railing designs and fabrication.</p>
+          <p>स्टील रेलिंग का काम</p>
         </article>
 
         <article class="service-card">
           <div class="service-icon">⌂</div>
           <h3>Balcony Work</h3>
-          <p>Beautiful and durable balcony work.</p>
+          <p>बालकनी का काम</p>
         </article>
 
         <article class="service-card">
           <div class="service-icon">▤</div>
           <h3>Aluminium Windows</h3>
-          <p>Aluminium window designs and installation.</p>
+          <p>एल्यूमिनियम विंडो</p>
         </article>
 
         <article class="service-card">
           <div class="service-icon">◇</div>
           <h3>Glass Work</h3>
-          <p>Glass railing and glass window work.</p>
+          <p>ग्लास रेलिंग और ग्लास विंडो</p>
         </article>
 
         <article class="service-card">
           <div class="service-icon">▦</div>
           <h3>Steel Gates</h3>
-          <p>Steel gates with attractive designs.</p>
+          <p>स्टील गेट का काम</p>
         </article>
 
         <article class="service-card">
           <div class="service-icon">▣</div>
           <h3>Hotel Furniture</h3>
-          <p>Tables, chairs and other steel furniture.</p>
+          <p>होटल टेबल, कुर्सी और फर्नीचर</p>
         </article>
 
       </div>
@@ -316,11 +443,14 @@
       <div class="section-heading">
         <span>Our Work Gallery</span>
         <h2>Our Products & Designs</h2>
+        <p class="hindi-name">हमारे प्रोडक्ट और डिजाइन</p>
         <p>Explore our work and product designs.</p>
       </div>
 
       <div class="gallery-filters" id="gallery-filters">
-        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn active" data-category="all">
+          All
+        </button>
       </div>
 
       <div class="gallery-grid" id="gallery-grid">
@@ -337,21 +467,24 @@
       <div class="section-heading">
         <span>Get In Touch</span>
         <h2>Contact Us</h2>
+        <p class="hindi-name">संपर्क करें</p>
       </div>
 
       <div class="contact-grid">
 
         <div class="contact-card">
           <div class="contact-icon">👤</div>
-          <h3>Owner</h3>
+          <h3>Owner / मालिक</h3>
           <p>Anil Rajpurohit</p>
         </div>
 
         <div class="contact-card">
           <div class="contact-icon">📞</div>
-          <h3>Call Us</h3>
+          <h3>Call Us / कॉल करें</h3>
           <p>
-            <a href="tel:+918849616597">88496 16597</a>
+            <a href="tel:+918849616597">
+              88496 16597
+            </a>
           </p>
         </div>
 
@@ -368,11 +501,12 @@
 
         <div class="contact-card">
           <div class="contact-icon">📍</div>
-          <h3>Our Location</h3>
+          <h3>Our Location / पता</h3>
           <p>
-            Riyanayas Mohalla, Near Bhati Petrol Pump,
-            Sumerpur Road, Pali, Rajasthan
+            रियांयास मोहल्ले से आगे, भाटी पेट्रोल पंप के पास,
+            सुमेरपुर रोड, पाली, राजस्थान
           </p>
+
           <a href="https://maps.app.goo.gl/QVudoVeKdNeqJGP7A"
              target="_blank" rel="noopener">
             Open Google Maps
@@ -382,7 +516,8 @@
         <div class="contact-card">
           <div class="contact-icon">📸</div>
           <h3>Instagram</h3>
-          <p>Follow Our Work</p>
+          <p>Follow Our Work / हमारा काम देखें</p>
+
           <a href="https://www.instagram.com/_kheteshvar_steel.pali22"
              target="_blank" rel="noopener">
             Visit Instagram
@@ -393,7 +528,9 @@
 
       <div class="contact-action">
         <h3>Need Steel or Aluminium Work?</h3>
-        <p>Contact us for your requirements and enquiries.</p>
+        <p class="hindi-name">
+          स्टील या एल्यूमिनियम का काम करवाने के लिए संपर्क करें।
+        </p>
 
         <a class="btn btn-primary"
            href="https://wa.me/919099787621?text=Hello%2C%20I%20want%20to%20enquire%20about%20your%20work."
@@ -413,6 +550,11 @@
            alt="Khetswar Steel & Aluminum Logo">
 
       <h3>Khetswar Steel & Aluminum</h3>
+
+      <p class="hindi-name">
+        खेतश्वर स्टील एंड एल्यूमिनियम
+      </p>
+
       <p>Quality Steel & Aluminium Work</p>
 
       <div class="footer-links">
@@ -424,62 +566,76 @@
       </div>
 
       <div class="footer-social">
-        <a href="https://wa.me/919099787621"
-           target="_blank" rel="noopener">WhatsApp</a>
 
-        <a href="tel:+918849616597">Call</a>
+        <a href="https://wa.me/919099787621"
+           target="_blank" rel="noopener">
+          WhatsApp
+        </a>
+
+        <a href="tel:+918849616597">
+          Call
+        </a>
 
         <a href="https://www.instagram.com/_kheteshvar_steel.pali22"
-           target="_blank" rel="noopener">Instagram</a>
+           target="_blank" rel="noopener">
+          Instagram
+        </a>
 
         <a href="https://maps.app.goo.gl/QVudoVeKdNeqJGP7A"
-           target="_blank" rel="noopener">Location</a>
+           target="_blank" rel="noopener">
+          Location
+        </a>
+
       </div>
 
       <p class="copyright">
         © <span id="current-year"></span>
-        Khetswar Steel & Aluminum. All Rights Reserved.
+        Khetswar Steel & Aluminum.
+        All Rights Reserved.
       </p>
-
-      <p class="credit">Designed with care.</p>
 
     </div>
   </footer>
 
-  <!-- PHOTO LIGHTBOX -->
-  <div class="lightbox" id="lightbox"
-       role="dialog" aria-modal="true"
+  <!-- PRODUCT IMAGE LIGHTBOX -->
+  <div class="lightbox"
+       id="lightbox"
+       role="dialog"
+       aria-modal="true"
        aria-label="Product image viewer"
        aria-hidden="true">
 
-    <button class="lightbox-close" id="lightbox-close"
-            aria-label="Close image">×</button>
+    <button class="lightbox-close"
+            id="lightbox-close"
+            aria-label="Close image">
+      ×
+    </button>
 
-    <button class="lightbox-prev" id="lightbox-prev"
-            aria-label="Previous image">❮</button>
+    <button class="lightbox-prev"
+            id="lightbox-prev"
+            aria-label="Previous image">
+      ❮
+    </button>
 
     <div class="lightbox-content">
-      <img id="lightbox-image" src="" alt="Product image">
+      <img id="lightbox-image"
+           src=""
+           alt="Product image">
+
       <p id="lightbox-caption"></p>
     </div>
 
-    <button class="lightbox-next" id="lightbox-next"
-            aria-label="Next image">❯</button>
+    <button class="lightbox-next"
+            id="lightbox-next"
+            aria-label="Next image">
+      ❯
+    </button>
 
   </div>
 
   <script>
     document.getElementById("current-year").textContent =
       new Date().getFullYear();
-
-    // Close navigation dropdowns if old CSS adds them
-    const navMenu = document.getElementById("nav-menu");
-
-    navMenu.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        navMenu.classList.remove("active");
-      });
-    });
   </script>
 
   <script src="./script.js"></script>
