@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Khetswar Steel & Aluminum | Pali Rajasthan</title>
+
   <meta name="description" content="Khetswar Steel & Aluminum, Pali Rajasthan. Steel railing, gates, windows, glass work, balcony and hotel furniture. Contact Anil Rajpurohit.">
 
   <meta name="theme-color" content="#a60000">
+
   <link rel="canonical" href="https://khetswar-steel-aluminum.digiprofiles.in/">
   <link rel="icon" type="image/png" href="./assets/icons/favicon.png">
   <link rel="apple-touch-icon" href="./assets/icons/favicon.png">
@@ -20,6 +22,125 @@
   <meta property="og:title" content="Khetswar Steel & Aluminum">
   <meta property="og:description" content="Quality steel and aluminium work in Pali, Rajasthan.">
   <meta property="og:image" content="./assets/profile/logo.png">
+
+  <!-- Navigation and mobile layout corrections -->
+  <style>
+    .menu-toggle {
+      display: none !important;
+    }
+
+    .nav-menu {
+      display: flex !important;
+      position: static !important;
+      flex-direction: row !important;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 12px 22px;
+      width: auto !important;
+      height: auto !important;
+      padding: 8px 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    .nav-menu a {
+      white-space: nowrap;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .location-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      min-height: 52px;
+      padding: 12px 17px;
+      border: 1px solid currentColor;
+      border-radius: 12px;
+      color: inherit;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    .location-button .map-pin {
+      font-size: 20px;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .floating-whatsapp {
+      display: none !important;
+    }
+
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .brand {
+        max-width: 100%;
+      }
+
+      .brand span {
+        font-size: 15px;
+      }
+
+      .nav-menu {
+        width: 100% !important;
+        gap: 8px 15px;
+        justify-content: center;
+        padding: 10px 0 !important;
+      }
+
+      .nav-menu a {
+        font-size: 14px;
+      }
+
+      .hero-buttons {
+        align-items: stretch;
+      }
+
+      .hero-buttons .btn,
+      .location-button {
+        flex: 1 1 auto;
+      }
+
+      .location-button {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .nav-menu {
+        gap: 8px 11px;
+      }
+
+      .nav-menu a {
+        font-size: 13px;
+      }
+
+      .location-button {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -29,14 +150,10 @@
     <div class="container nav-container">
 
       <a href="#home" class="brand">
-        <img src="./assets/profile/logo.png" alt="Khetswar Steel & Aluminum Logo">
+        <img src="./assets/profile/logo.png"
+             alt="Khetswar Steel & Aluminum Logo">
         <span>Khetswar Steel & Aluminum</span>
       </a>
-
-      <button class="menu-toggle" id="menu-toggle"
-        aria-label="Open navigation menu" aria-expanded="false">
-        ☰
-      </button>
 
       <nav class="nav-menu" id="nav-menu">
         <a href="#home">Home</a>
@@ -66,21 +183,32 @@
         <p class="hero-owner">Owned by Anil Rajpurohit</p>
 
         <div class="hero-buttons">
+
           <a class="btn btn-primary"
              href="https://wa.me/919099787621"
              target="_blank" rel="noopener">
             WhatsApp Now
           </a>
 
-          <a class="btn btn-outline" href="tel:+918849616597">
+          <a class="btn btn-outline"
+             href="tel:+918849616597">
             Call Now
           </a>
+
+          <a class="location-button"
+             href="https://maps.app.goo.gl/QVudoVeKdNeqJGP7A"
+             target="_blank" rel="noopener">
+            <span class="map-pin">📍</span>
+            <span>Sumerpur Road, Pali</span>
+          </a>
+
         </div>
       </div>
 
       <div class="hero-image">
         <img src="./assets/profile/shop.jpg"
-             alt="Khetswar Steel and Aluminum Shop">
+             alt="Khetswar Steel and Aluminum Shop"
+             onerror="this.style.display='none'">
       </div>
 
     </div>
@@ -105,7 +233,9 @@
 
         <div class="about-text">
           <h3>Anil Rajpurohit</h3>
-          <p class="owner-label">Owner – Khetswar Steel & Aluminum</p>
+          <p class="owner-label">
+            Owner – Khetswar Steel & Aluminum
+          </p>
 
           <p>
             Welcome to Khetswar Steel & Aluminum. We provide
@@ -191,11 +321,6 @@
 
       <div class="gallery-filters" id="gallery-filters">
         <button class="filter-btn active" data-category="all">All</button>
-        <button class="filter-btn" data-category="Table and stand">Table and stand</button>
-        <button class="filter-btn" data-category="balcony">Balcony</button>
-        <button class="filter-btn" data-category="glass window">Glass window</button>
-        <button class="filter-btn" data-category="steel gate">Steel gate</button>
-        <button class="filter-btn" data-category="steel window">Steel window</button>
       </div>
 
       <div class="gallery-grid" id="gallery-grid">
@@ -225,7 +350,9 @@
         <div class="contact-card">
           <div class="contact-icon">📞</div>
           <h3>Call Us</h3>
-          <p><a href="tel:+918849616597">88496 16597</a></p>
+          <p>
+            <a href="tel:+918849616597">88496 16597</a>
+          </p>
         </div>
 
         <div class="contact-card">
@@ -233,16 +360,23 @@
           <h3>WhatsApp</h3>
           <p>
             <a href="https://wa.me/919099787621"
-               target="_blank" rel="noopener">90997 87621</a>
+               target="_blank" rel="noopener">
+              90997 87621
+            </a>
           </p>
         </div>
 
         <div class="contact-card">
           <div class="contact-icon">📍</div>
           <h3>Our Location</h3>
-          <p>Riyanayas Mohalla, Near Bhati Petrol Pump, Sumerpur Road, Pali, Rajasthan</p>
+          <p>
+            Riyanayas Mohalla, Near Bhati Petrol Pump,
+            Sumerpur Road, Pali, Rajasthan
+          </p>
           <a href="https://maps.app.goo.gl/QVudoVeKdNeqJGP7A"
-             target="_blank" rel="noopener">Open Google Maps</a>
+             target="_blank" rel="noopener">
+            Open Google Maps
+          </a>
         </div>
 
         <div class="contact-card">
@@ -250,7 +384,9 @@
           <h3>Instagram</h3>
           <p>Follow Our Work</p>
           <a href="https://www.instagram.com/_kheteshvar_steel.pali22"
-             target="_blank" rel="noopener">Visit Instagram</a>
+             target="_blank" rel="noopener">
+            Visit Instagram
+          </a>
         </div>
 
       </div>
@@ -288,30 +424,27 @@
       </div>
 
       <div class="footer-social">
-        <a href="https://wa.me/919099787621" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://wa.me/919099787621"
+           target="_blank" rel="noopener">WhatsApp</a>
+
         <a href="tel:+918849616597">Call</a>
+
         <a href="https://www.instagram.com/_kheteshvar_steel.pali22"
            target="_blank" rel="noopener">Instagram</a>
+
         <a href="https://maps.app.goo.gl/QVudoVeKdNeqJGP7A"
            target="_blank" rel="noopener">Location</a>
       </div>
 
       <p class="copyright">
-        © <span id="current-year"></span> Khetswar Steel & Aluminum. All Rights Reserved.
+        © <span id="current-year"></span>
+        Khetswar Steel & Aluminum. All Rights Reserved.
       </p>
 
       <p class="credit">Designed with care.</p>
 
     </div>
   </footer>
-
-  <!-- FLOATING WHATSAPP -->
-  <a class="floating-whatsapp"
-     href="https://wa.me/919099787621"
-     target="_blank" rel="noopener"
-     aria-label="Chat on WhatsApp">
-    WhatsApp
-  </a>
 
   <!-- PHOTO LIGHTBOX -->
   <div class="lightbox" id="lightbox"
@@ -336,25 +469,17 @@
   </div>
 
   <script>
-    // Mobile navigation
-    const menuToggle = document.getElementById("menu-toggle");
-    const navMenu = document.getElementById("nav-menu");
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
 
-    menuToggle.addEventListener("click", () => {
-      const opened = navMenu.classList.toggle("active");
-      menuToggle.setAttribute("aria-expanded", opened ? "true" : "false");
-    });
+    // Close navigation dropdowns if old CSS adds them
+    const navMenu = document.getElementById("nav-menu");
 
     navMenu.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", () => {
         navMenu.classList.remove("active");
-        menuToggle.setAttribute("aria-expanded", "false");
       });
     });
-
-    // Current year
-    document.getElementById("current-year").textContent =
-      new Date().getFullYear();
   </script>
 
   <script src="./script.js"></script>
